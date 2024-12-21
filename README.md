@@ -1,1 +1,1 @@
-<!DOCTYPE html>
+star.github.io
