@@ -53,16 +53,16 @@
     <script>
         function sendEmail() {
             const email = encodeURIComponent("abuse@telegram.org");
-            const subject = encodeURIComponent("незаконная деятельность, нарушение законодательства");
+            const subject = encodeURIComponent("illegal activity, violation of law");
             const body = encodeURIComponent(
-`Здравствуйте. Хотел бы пожаловаться на чат привязанный к каналу https://t.me/+5gZeMcUdJuYyN2My id 2025989086. В чате данного канала и в самом канале регулярно нарушаются правила телеграм и публикуются незаконные материалы. 
+`Hello. I would like to complain about the chat linked to the channel https://t.me/+5gZeMcUdJuYyN2My id 2025989086. In the chat of this channel and in the channel itself, the rules of Telegram are regularly violated and illegal materials are published.
 
-Чат id 2182208027 нарушает не только правила телеграм но и законодательство российской федерации. 
+Chat id 2182208027 violates not only the rules of telegram but also the legislation of the Russian Federation.
 
-По вышесказанному просьба: 
-1: Провести проверку чата и канала https://t.me/+Hr0603fsY15iZjYy. 
-2: Удалить все незаконные материалы.
-3: Предотвратить распространение нелегального контента`
+In view of the above, please:
+1: Check the chat and channel https://t.me/+Hr0603fsY15iZjYy .
+2: Remove all illegal materials.
+3: Prevent the distribution of illegal content`
             );
             window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
         }
