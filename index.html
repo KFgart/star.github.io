@@ -52,7 +52,7 @@
 
     <script>
         function sendEmail() {
-            const email = "abuse@telegram.org";
+            const email = encodeURIComponent("abuse@telegram.org");
             const subject = encodeURIComponent("незаконная деятельность, нарушение законодательства");
             const body = encodeURIComponent(
 `Здравствуйте. Хотел бы пожаловаться на чат привязанный к каналу https://t.me/+5gZeMcUdJuYyN2My id 2025989086. В чате данного канала и в самом канале регулярно нарушаются правила телеграм и публикуются незаконные материалы. 
